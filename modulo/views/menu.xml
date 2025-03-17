@@ -1,0 +1,79 @@
+<odoo>
+    <data><!--
+        <menuitem id="menu_laliga_root"
+            name="League"
+            sequence="0" />
+
+
+            <menuitem id="menu_team_root"
+                name="Teams"
+                parent="menu_laliga_root"
+                sequence="1" />
+                
+                <menuitem id="menu_team_template"
+                    name="Teams"
+                    parent="menu_team_root"
+                    sequence="1"
+                    action="team_action_window" />
+
+                    <menuitem id="menu_player_template"
+                    parent="menu_team_root"
+                    name="Players"
+                    sequence="2"
+                    action="player_action_window"/>
+
+                <menuitem id="menu_member_template"
+                    parent="menu_team_root"
+                    name="Members"
+                    sequence="3"
+                    action="member_action_window"/>
+
+                <menuitem id="menu_staff_template"
+                    parent="menu_team_root"
+                    name="Staff"
+                    sequence="4"
+                    action="staff_action_window"/>
+
+                    <menuitem id="menu_transfer_template"
+                    parent="menu_team_root"
+                    name="Tranfers"
+                    sequence="5"
+                    action="transfer_action_window"/>
+
+            <menuitem id="menu_league_root"
+                name="League"
+                parent="menu_laliga_root"
+                sequence="1" />
+
+                <menuitem id="menu_league_template"
+                name="League"
+                parent="menu_league_root"
+                sequence="1" 
+                action="league_action_window"/>
+
+
+            <menuitem id="menu_PC_root"
+                name="PC"
+                parent="menu_league_root"
+                sequence="2" />
+
+
+                <menuitem id="menu_pokemon_template"
+                    name="Pokemon"
+                    parent="menu_PC_root"
+                    sequence="1"
+                    action="pokemon_action_window" />
+
+                <menuitem id="menu_trainer_template"
+                    name="Entrenador"
+                    parent="menu_PC_root"
+                    sequence="1"
+                    action="trainer_action_window" />
+
+                <menuitem id="menu_team_template"
+                    name="Equipo"
+                    parent="menu_PC_root"
+                    sequence="1"
+                    action="team_action_window" />-->
+    </data>
+</odoo>
